@@ -12,7 +12,7 @@ Dim FirstDate As Date
 Dim Temp As Date
 Dim c As Range
 'Path where you want files to get generated.
-Path = "/Users/mallikarjunbanda/Downloads/internship logging form w"
+Path = "/Users/[[username]]/Downloads/internship logging form w"
 Week = 0
 IntervalType = "ww"
 'Start date of Week 1
@@ -27,7 +27,7 @@ End If
 Week = Week + 1
 
 'Template its nothing but one of filled internship form. Say Week 1.
-Set wb = Workbooks.Add("/Users/mallikarjunbanda/Downloads/log.xltx")
+Set wb = Workbooks.Add("/Users/[[username]]/Downloads/log.xltx")
 wb.SaveAs FileName:=Path & i & ".xlsx"
 Temp = FirstDate
 wb.Worksheets("Sheet1").Range("B3").Value = DateAdd("d", 0, Temp)
